@@ -1,0 +1,14 @@
+{
+    "apiUrl": "http://localhost:5555/api/admin/v1",
+    "CONSTANT": {
+        "LOGIN_KEY": "_bw_admin_token_",
+        "ROLE_KEY": "_access_control_"
+    },
+    "rowsPerPage": 10,
+    "page": 0,
+    "rowsPerPageOptions": [
+        5,
+        10,
+        25
+    ]
+}

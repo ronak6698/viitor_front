@@ -1,0 +1,189 @@
+@import "theme";
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #262632;
+}
+
+p {
+  margin: 15px 0;
+}
+
+a {
+  color: $secondary-color !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.primary-link {
+  color: $primary-color !important;
+}
+
+h2.h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: $primary-color !important;
+  color: #fff !important;
+  padding: 5px 20px !important;
+  text-transform: capitalize !important;
+}
+
+.btn-secondary {
+  background-color: $secondary-color !important;
+  color: #fff !important;
+  padding: 5px 20px !important;
+  text-transform: capitalize !important;
+}
+
+.btn-outline-primary {
+  border-color: $primary-color !important;
+  color: #000 !important;
+}
+
+.btn-outline-secondary {
+  border-color: $secondary-color !important;
+  color: #000 !important;
+}
+
+.btn-outline-primary {
+  border: 1px solid $button-color !important;
+}
+
+.btn-modal-close {
+  position: absolute !important;
+  top: 15px;
+  right: 0;
+}
+
+.form-label{
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+.time-field {    
+  padding: 18px 10px !important;
+  border-color: rgba(0, 0, 0, 0.23) !important;
+}
+.label-inline{
+  padding-top: 10px;
+  display: block;
+  font-size: 16px;
+}
+.react-tags__search-input input {
+  font-size: 16px;
+}
+.react-tags__selected button {
+  background: transparent;
+  border-radius: 10px;
+  border-color: #f50057;
+  height: auto !important;
+  padding: 5px 14px !important;
+  font-size: 14px !important;
+}
+.txt-label{
+  padding: 15px 0 0 15px;
+  display: block;
+}
+
+.text-left {
+  text-align: left;
+}
+.dashboard-content {
+  background: #f9fafc;
+  min-height: calc(100vh - 90px);
+}
+.no-padding {
+  padding: 0 !important;
+}
+.dashboard-content .main-content {
+  width: calc(100% - 263px - 50px);
+  margin-left: 263px;
+  margin-top: 70px;
+  padding: 20px 25px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+table {
+  border-collapse: collapse;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #dee2e6;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.step-wizard-block {
+  padding: 20px 25px;
+  margin: 20px auto;
+
+  .MuiInputLabel-formControl {
+    font-size: 14px;
+  }
+  .MuiFormControl-root {
+    margin: 7px 0;
+  }
+}
+
+.custom-date-picker {
+  background: #fff;
+  border-radius: 5px;
+  .react-date-picker {
+    .react-date-picker__wrapper {
+      border-radius: 5px;
+      .react-date-picker__inputGroup {
+        padding: 5px 15px;
+        height: 30px;
+
+        .react-date-picker__inputGroup__input {
+          user-select: none;
+        }
+      }
+    }
+
+    button,
+    abbr {
+      font-size: 15px;
+    }
+    .react-calendar__year-view .react-calendar__tile,
+    .react-calendar__decade-view .react-calendar__tile,
+    .react-calendar__century-view .react-calendar__tile {
+      padding: 15px 19px;
+    }
+  }
+}
+.MuiFormControl-root{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-content {
+    .main-content {
+      width: calc(100% - 50px);
+      margin-left: 0;
+    }
+  }
+}
